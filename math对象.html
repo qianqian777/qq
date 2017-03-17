@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>H5course-半夏离殇</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<style type="text/css">
+		.wrap .article {
+			margin: 0 12% 50px;
+			border: 1px dotted black;
+		}
+		.wrap h1 {
+			font-weight: bold;
+			font-size: 30px;
+			color: #39f;
+			text-align: center;
+		}
+		.wrap h2 {
+			border-top: 1px dotted black;
+			font-weight: bold;
+			font-size: 20px;
+			color: #39f;
+		}
+		.wrap h3 {
+			margin-left: -30px;
+			font-weight: bold;
+			font-size: 16px;
+			color: #39f;
+		}
+		.wrap ul, .wrap ol, .wrap li {
+			margin-top: 5px;
+			margin-left: 30px;
+		}
+		.wrap p, .wrap a {
+			margin-top: 5px;
+			margin-left: 30px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="article">			
+			<h1 id="tit">Math——数学函数和常量</h1>
+			<h2>概要：</h2>
+			<ul>
+			<li>Math是一个对象，其属性为若干有用的函数和常量。他和Date、String不同，Math不是对象的类。没有Math()构造函数，只是简单的函数，而不是对某个对象进行操作的方法。具体如下：</li>
+				<li>01、Math.constant;&nbsp;Math对象常量;</li>
+				<li>02、Math.function();&nbsp;Math对象函数;</li>
+			</ul>
+			<h2>常量：</h2>
+			<ul>
+				<li>01、Math.E：常量e，自然对数的底数；</li>
+				<li>02、Math.ln10：10的自然对数；</li>
+				<li>03、Math.ln2：2的自然对数；</li>
+				<li>04、Math.log<sub>10</sub>E：e以10为底的对数；</li>
+				<li>05、Math.log<sub>2</sub>E：e以2为底的对数；</li>
+				<li>06、Math.PI：常量π；</li>
+				<li>07、Math.sqrt<sup>1/2</sup>：2的平方根的倒数；</li>
+				<li>08、Math.sqrt<sup>2</sup>：2的平方根；</li>
+			</ul>
+			<h2>静态函数：</h2>
+			<ul>
+				<li>01、Math.abs()：计算绝对值；</li>
+				<li>02、Math.acos()：计算反余弦值；</li>
+				<li>03、Math.asin()：计算正弦值；</li>
+				<li>04、Math.atan()：计算反正切值；</li>
+				<li>05、Math.atan2()：计算X轴到指定点的角度；</li>
+				<li>06、Math.sin：计算正弦值；</li>
+				<li>07、Math.cos：计算余弦值；</li>
+				<li>08、Math.tan()：计算正切值；</li>
+				<li>09、Math.exp()：计算e的乘方；</li>
+				<li>10、Math.log()：计算自然对数；</li>
+				<li>11、Math.max()：返回两个数中较大的那个；</li>
+				<li>12、Math.min()：返回两个数中较小的那个；</li>
+				<li>13、Math.pow()：计算x的y次方；</li>
+				<li>14、Math.sqrt：计算平方根；</li>
+				<li>15、Math.round()：四舍五入；</li>
+				<li>16、Math.floor()：对一个数字向下取整；</li>
+				<li>17、Math.ceil()：对一个数字向上取整；</li>
+				<li>18、Math.random()：计算一个随机数；</li>
+			</ul>
+			<h2>使用Math做的效果：</h2>
+			<ul>
+				<li>可以点击以下链接查看效果哦！</li>
+				<li><a href="cn/彩票抽奖.html" title="">01、彩票抽奖</a></li>
+				<li><a href="cn/圆周运动.html" title="">02、圆周运动</a></li>
+				<li><a href="cn/正余弦循环运动.html" title="">03、正余弦循环运动</a></li>
+				<li><a href="cn/新闻标题随机.html" title="">04、新闻标题随机</a></li>
+			</ul>
+			<h2>Math函数使用：</h2>
+			<p>案例一：Math()函数的取整使用，包括向下取整、向上取整、四舍五入。</p>
+			<ol>
+				<li>&lt;srcipt&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.ceil(0.4);&nbsp;&nbsp;//1</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.ceil(0.6);&nbsp;&nbsp;//1</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.ceil(-0.4);&nbsp;&nbsp;//0</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.ceil(-0.6);&nbsp;&nbsp;//0</li>
+				<li>&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.floor(0.4);&nbsp;&nbsp;//0</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.floor(0.6);&nbsp;&nbsp;//0</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.floor(-0.4);&nbsp;&nbsp;//-1</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.floor(-0.6);&nbsp;&nbsp;//-1</li>
+				<li>&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.round(0.4);&nbsp;&nbsp;//0</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.round(0.6);&nbsp;&nbsp;//1</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.round(-0.4);&nbsp;&nbsp;//0</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.round(-0.6);&nbsp;&nbsp;//-1</li>
+				<li>&lt;/script&gt;</li>
+			</ol>
+			<p>案例二：最大最小值获取，包括(常规操作)与(Math函数的max与min)两种方法！</p>
+			<ol>
+				<li>&lt;srcipt&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;arr&nbsp;=&nbsp;[1,&nbsp;13,&nbsp;7,&nbsp;3,&nbsp;5,&nbsp;8,&nbsp;10];</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//方法一：常规实现</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;Nmin&nbsp;=&nbsp;0;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;Nmax&nbsp;=&nbsp;0;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0&nbsp;;&nbsp;i&nbsp;&lt;=&nbsp;arr.length;&nbsp;i++)&nbsp;{</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(Nmin&nbsp;&gt;&nbsp;arr[i])&nbsp;{</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nmin&nbsp;=&nbsp;arr[i];</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(Nmin);</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(Nmax&nbsp;&lt;&nbsp;arr[i]){</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nmax&nbsp;=&nbsp;arr[i];</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(Nmax);</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//方法二：Math对象</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;max&nbsp;=&nbsp;Math.max.apply(null,&nbsp;arr);</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;min&nbsp;=&nbsp;Math.min.apply(null,&nbsp;arr);</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(max,&nbsp;min);</li>
+				<li>&lt;/script&gt;</li>
+			</ol>
+			<p>案例三：使用Math函数获取随机数的操作！</p>
+			<ol>
+				<li>&lt;script&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;随机数：</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.random();//&nbsp;&nbsp;取值范围大于0小于1：(0,&nbsp;1);</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.round(Math.random()*10);//&nbsp;&nbsp;可获取0到10的随机整数;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;39&nbsp;&lt;=&nbsp;Math.random()&nbsp;&lt;=&nbsp;99怎么写？</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.floor((Math.random()*61)+39);</li>
+				<li>&nbsp;&lt;/script&gt;</li>
+			</ol>
+			<p>案例四：Math的三角函数使用！</p>
+			<ol>
+				<li>&lt;script&gt;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;三角函数：</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.sin(0);//&nbsp;&nbsp;0</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.sin(Math.PI&nbsp;/&nbsp;2);//&nbsp;1</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.sin(Math.PI);//&nbsp;这里的PI无限接近于0;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.cos(0);//&nbsp;1</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.cos(Math.PI&nbsp;/&nbsp;2);//&nbsp;0</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.cos(Math.PI);//&nbsp;这里的PI无限接近于0;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;反三角得出角度：</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert&nbsp;(180*Math.asin(4&nbsp;/&nbsp;5)/&nbsp;Math.PI);</li>
+				<li>&nbsp;&lt;/script&gt;</li>
+			</ol>
+		</div>
+	</div>
+	<script type="text/javascript"></script>
+</body>
+</html>
